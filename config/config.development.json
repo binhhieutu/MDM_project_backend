@@ -1,0 +1,88 @@
+{
+  "env": "development",
+  "app_name": "api",
+  "app_desc": "api_desc",
+  "node_port": 7412,
+  "base_url": "http://localhost:7412",
+  "base_host": "http://localhost",
+  "database": {
+    "mongodb": "mongodb://db:27017/sample-api",
+    "pg": {
+      "user": "postgres",
+      "password": "changeme",
+      "database": "test"
+    },
+    "mssql": {
+      "user": "sa",
+      "password": "mssql1Ipw",
+      "database": "test",
+      "server": "localhost",
+      "port": 1433,
+      "parseJSON": true,
+      "options": {
+        "encrypt": false,
+        "enableArithAbort": true,
+        "useUTC": false,
+        "trustServerCertificate": false
+      },
+      "connectionTimeout": 15000,
+      "requestTimeout": 10000,
+      "pool": {
+        "max": 100,
+        "min": 0,
+        "idleTimeoutMillis": 30000
+      }
+    }
+  },
+  "cache": {
+    "redis": { "url": "redis://127.0.0.1:6379" }
+  },
+  "timeout_in_second": 300,
+  "timeout_in_millisecond": 10000,
+  "icon": {
+    "default_avatar": "/public/asset/image/user.jpeg",
+    "logo": "/public/asset/image/logo.svg"
+  },
+  "key": "SAMPLEAPI2022",
+  "auth": {
+    "app": {
+      "product": "app",
+      "token": "2b5fa55f4518e8f3cf810fce6591d347a69027d7916cdd54b6665f06b1a3ffe9"
+    },
+    "admin": {
+      "product": "admin",
+      "token": "2b5fa55f4518e8f3cf810fce6591d347a69027d7916cdd54b6665f06b1a3ffe9"
+    },
+    "postman": {
+      "product": "postman",
+      "token": "894ca68e81e66b957731debfdca118a063afcd06e7e01974bf39aa7acfb3d996"
+    }
+  },
+  "otp": {
+    "url": "https://notification.example.com",
+    "template": "SampleApi thong bao [OTP] la ma xac nhan de dang nhap vao App Sample",
+    "account": "",
+    "platform": "mobile",
+    "otp_expire": 300,
+    "otp_length": 4,
+    "otp_test": 1234,
+    "otp_max_in_day": 2,
+    "token": "bnNjU3NBTjVXbUQ5QQ==",
+    "product": "MA",
+    "public_key": "nNjU385jVXbNBTQ5Q7Ub",
+    "private_key": "Q5Q785NBTjVXbUbnNjU3",
+    "timeout_in_millisecond": 10000
+  },
+  "fcm": {
+    "timeout_in_millisecond": 15000,
+    "server_key": "AAAAnC3CJR4:APA91bFlf6wz7-Gagk7F-ZyT3GsolNBOhaetVEbZPaYCSrBPg9OCthWRqawfJYuqu-W6j1Iccl1Lp4ipoavSA2t3L9eY8JnFkN63CXK3VtwReCuKGlqaYPL3Hv3X6KkhtgGxyzXgfqq_",
+    "retry_count": 1
+  },
+  "oneSignal": {
+    "appId": "2d2f0f40-6e37-4169-a420-b5468577c9ad",
+    "appKey": "Bearer Y2QwODUwMTYtNmY0Zi00NmNjLWFjMjMtMjZiMmRkODEwMDZm"
+  },
+  "logs": {
+    "discord_url": "https://discord.com/api/webhooks/982188693756477492/pcKqIwTv2p39NE8CfpEVAS_X_K959Pd3YDhn8iPc5xQuZOObMoVFUPh5rv455q8DQU6A"
+  }
+}

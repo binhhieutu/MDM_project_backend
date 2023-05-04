@@ -1,0 +1,15 @@
+# Register bricks which can be consumed via the Mason CLI.
+# https://github.com/felangel/mason
+bricks:
+  # Sample Brick
+  # Run `mason make hello` to try it out.
+  app_full_brick:
+    path: bricks/app_full_brick
+  app_interface_brick:
+    path: bricks/app_interface_brick
+  admin_interface_brick:
+    path: bricks/admin_interface_brick
+  admin_full_brick:
+    path: bricks/admin_full_brick
+  add_end_point_brick:
+    path: bricks/add_end_point_brick

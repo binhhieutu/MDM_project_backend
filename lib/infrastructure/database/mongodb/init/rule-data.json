@@ -1,0 +1,58 @@
+[
+  {
+    "name": "read|all|everything",
+    "actions": "read",
+    "subject": "all"
+  },
+  {
+    "name": "create|all|everything",
+    "actions": "create",
+    "subject": "all"
+  },
+  {
+    "name": "update|all|everything",
+    "actions": "update",
+    "subject": "all"
+  },
+  {
+    "name": "delete|all|everything",
+    "actions": "delete",
+    "subject": "all"
+  },
+  {
+    "name": "read|user|everything",
+    "actions": "read",
+    "subject": "User"
+  },
+  {
+    "name": "create|user|everything",
+    "actions": "create",
+    "subject": "User"
+  },
+  {
+    "name": "update|user|everything",
+    "actions": "update",
+    "subject": "User"
+  },
+  {
+    "name": "delete|user|everything",
+    "actions": "delete",
+    "subject": "User"
+  },
+  {
+    "name": "update|user|owner",
+    "actions": "update",
+    "subject": "User",
+    "conditions": {
+      "owner": "${owner}"
+    }
+  },
+  {
+    "name": "delete|user|owner",
+    "actions": "delete",
+    "subject": "User",
+    "conditions": {
+      "owner": "${owner}"
+    }
+  }
+]

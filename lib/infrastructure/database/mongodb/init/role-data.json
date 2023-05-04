@@ -1,0 +1,20 @@
+[
+  {
+    "name": "superadmin",
+    "rules": [
+      "read|all|everything",
+      "create|all|everything",
+      "update|all|everything",
+      "delete|all|everything"
+    ]
+  },
+  {
+    "name": "user",
+    "rules": [
+      "read|all|owner",
+      "create|all|owner",
+      "update|all|owner",
+      "delete|all|owner"
+    ]
+  }
+]

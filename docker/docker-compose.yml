@@ -1,0 +1,27 @@
+version: "3.4"
+
+services:
+  app:
+    # image: registry.gitlab.com/ngocdungiapi/e-learning:dev-v0.4
+    build:
+      dockerfile: ./backend.dockerfile
+      context: .
+    image: registry.gitlab.com/ngocdungiapi/clean-architecture-node:latest-backend
+    volumes:
+      - ./public/images:/app/public/images
+    ports:
+      - '7412:7412'
+    restart: unless-stopped
+    depends_on:
+      - redis
+      - db
+  db:
+    image: mongo
+    volumes:
+      - .docker/data/db:/data/db
+    restart: unless-stopped
+  redis:
+    image: redis:5-alpine
+    volumes:
+      - .docker/data/redis:/data
+    restart: unless-stopped

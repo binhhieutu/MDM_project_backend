@@ -1,0 +1,12 @@
+[
+  {
+    "username": "superadmin",
+    "password": "6eabe8af3398e47f37a3d2d2e0a65b263c2e8bda91530e8a7054871192d387dd",
+    "name": "superadmin",
+    "created_by": "init",
+    "updated_by": "init",
+    "role": "superadmin",
+    "product": "*",
+    "rules": []
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "bricks": {
+    "app_full_brick": {
+      "path": "/Users/mac/Desktop/Working/template/clean-architecture-node/mason/ez_mason/bricks/app_full_brick"
+    },
+    "app_interface_brick": {
+      "path": "/Users/mac/Desktop/Working/template/clean-architecture-node/mason/ez_mason/bricks/app_interface_brick"
+    },
+    "admin_interface_brick": {
+      "path": "/Users/mac/Desktop/Working/template/clean-architecture-node/mason/ez_mason/bricks/admin_interface_brick"
+    },
+    "admin_full_brick": {
+      "path": "/Users/mac/Desktop/Working/template/clean-architecture-node/mason/ez_mason/bricks/admin_full_brick"
+    },
+    "add_end_point_brick": {
+      "path": "/Users/mac/Desktop/Working/template/clean-architecture-node/mason/ez_mason/bricks/add_end_point_brick"
+    }
+  }
+}
